@@ -1,0 +1,39 @@
+# Peticiones para la API de The Simpsons
+#
+# Con la extension "Thunder Client" de VS Code: abre este archivo y pulsa
+# "Send Request" (encima del bloque) o "Send All".
+# Pre-requisito: el backend corriendo -> npm run dev:api
+
+@host = http://localhost:3000
+
+### Health check de la API
+GET {{host}}/api
+Accept: application/json
+
+### Personaje por id (Homer Simpson)
+GET {{host}}/api/personaje/1
+Accept: application/json
+
+### Marge Simpson
+GET {{host}}/api/personaje/2
+Accept: application/json
+
+### Bart Simpson
+GET {{host}}/api/personaje/3
+Accept: application/json
+
+### Ruta legacy (misma respuesta, sin el prefijo /api)
+GET {{host}}/personaje/1
+Accept: application/json
+
+### Id inexistente -> responde 404
+GET {{host}}/api/personaje/99999
+Accept: application/json
+
+### Id no numerico -> responde 400
+GET {{host}}/api/personaje/abc
+Accept: application/json
+
+### Id cero -> responde 400
+GET {{host}}/api/personaje/0
+Accept: application/json

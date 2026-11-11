@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B7FD4"/>
+      <stop offset="45%" stop-color="#59B3E8"/>
+      <stop offset="100%" stop-color="#C2E6F8"/>
+    </linearGradient>
+
+    <g id="nube">
+      <ellipse cx="150" cy="0" rx="150" ry="60"/>
+      <ellipse cx="52" cy="26" rx="95" ry="48"/>
+      <ellipse cx="248" cy="22" rx="102" ry="46"/>
+      <ellipse cx="150" cy="44" rx="178" ry="36"/>
+    </g>
+
+    <g id="nubeChica">
+      <ellipse cx="60" cy="0" rx="60" ry="26"/>
+      <ellipse cx="102" cy="-12" rx="44" ry="32"/>
+      <ellipse cx="26" cy="6" rx="40" ry="22"/>
+      <ellipse cx="72" cy="16" rx="82" ry="18"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#cielo)"/>
+
+  <g fill="#C3E4F6" transform="translate(0,16)">
+    <use href="#nube" x="40" y="90"/>
+    <use href="#nube" x="1130" y="70"/>
+    <use href="#nube" x="230" y="300"/>
+    <use href="#nube" x="1240" y="330"/>
+    <use href="#nube" x="130" y="630"/>
+    <use href="#nube" x="760" y="720"/>
+    <use href="#nube" x="1130" y="880"/>
+    <use href="#nubeChica" x="680" y="250"/>
+    <use href="#nubeChica" x="470" y="470"/>
+    <use href="#nubeChica" x="980" y="520"/>
+    <use href="#nubeChica" x="330" y="900"/>
+    <use href="#nubeChica" x="1380" y="520"/>
+  </g>
+
+  <g fill="#FFFFFF">
+    <use href="#nube" x="40" y="90"/>
+    <use href="#nube" x="1130" y="70"/>
+    <use href="#nube" x="230" y="300"/>
+    <use href="#nube" x="1240" y="330"/>
+    <use href="#nube" x="130" y="630"/>
+    <use href="#nube" x="760" y="720"/>
+    <use href="#nube" x="1130" y="880"/>
+    <use href="#nubeChica" x="680" y="250"/>
+    <use href="#nubeChica" x="470" y="470"/>
+    <use href="#nubeChica" x="980" y="520"/>
+    <use href="#nubeChica" x="330" y="900"/>
+    <use href="#nubeChica" x="1380" y="520"/>
+  </g>
+</svg>
